@@ -1,0 +1,26 @@
+REFACTOR:
+
+***fun LIbroALeer: Podemos sacar el if haciendo que libros leidos use un set tambien y consecuentemente hacemos una operacion de sets
+hay que tener cuidado porque algunas funciones usan indexOf de librosLeidos y hay que cambiarlas
+
+***Tema testeos, hay que refactorizarlos siguiendo un formato porque hay describes anidados y queda poco claro, podemos agregar mas archivos para
+dividir la responsabilidad
+
+***Poner los metodos que se puedan en private
+
+***crear nuevos packages y reorganizar la estructura de archivos
+Esperemos a hacer un diagrama de clases basico, para ver mejor como interactuan todos
+
+*****Correcciones:
+
+
+<<Repositorios>>
+Hay que ver como chequear la busqueda de objetos y que modificamos con Repo.update()
+    por el momento devuelve el objeto solo, sin nada que lo modifique.
+    Luego cuando buscamos un objeto, es molesto buscarlo por referencia a memoria y aque
+    deberiamos guardarlo en alguna variable y ahi compararlo. A lo mejor completarlo con el metodo update
+
+
+
+Falta implementar iterator para mayor cohesion. Unificar mailSender en un unico mail sender(mockeable)para
+procesos de sysAdmin y observers y se decora el cuerpo del mail.
